@@ -32,7 +32,7 @@ namespace UserLogin
             cmd.ExecuteNonQuery();
             MessageBox.Show("Jesteś Zarejestrowany...!!!");
         }
-
+        //Nadannie przyciskowe nowy obiekt
         private void btmDoLogowania_Click(object sender, EventArgs e)
         {
             this.Hide();
