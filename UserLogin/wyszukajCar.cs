@@ -13,6 +13,7 @@ namespace UserLogin
 {
     public partial class wyszukajCar : UserControl
     {
+        //Łączenie z bazą danych
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         public wyszukajCar()
