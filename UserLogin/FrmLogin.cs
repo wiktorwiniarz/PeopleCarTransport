@@ -26,7 +26,7 @@ namespace UserLogin
         //Łączenie z bazą oraz sprawdzanie poprawności danych do zalogowania
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport1\Projekt_PeopleCarTransport\Projekt_PeopleCarTransport\BazaDanych\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "Select * from tbl_Login Where username = '" + textUzytkownik.Text.Trim() + "' and password = '" + textHaslo.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             DataTable dtbl = new DataTable();

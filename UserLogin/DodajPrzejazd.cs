@@ -13,7 +13,7 @@ namespace UserLogin
 {
     public partial class DodajPrzejazd : UserControl
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport1\Projekt_PeopleCarTransport\Projekt_PeopleCarTransport\BazaDanych\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         public DodajPrzejazd()
         {

@@ -25,7 +25,7 @@ namespace UserLogin
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport1\Projekt_PeopleCarTransport\Projekt_PeopleCarTransport\BazaDanych\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
             String str = "insert into tbl_Login(username,password,firstname,lastname,address) values('" + txtUsername.Text + "','" + txtPassword.Text + "','" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtAddress.Text + "')";
             con.Open();
             SqlCommand cmd = new SqlCommand(str, con);
