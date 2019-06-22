@@ -23,6 +23,7 @@ namespace UserLogin
             Close();
         }
 
+        //Łączenie z bazą oraz sprawdzanie poprawności danych do zalogowania
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport1\Projekt_PeopleCarTransport\Projekt_PeopleCarTransport\BazaDanych\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");

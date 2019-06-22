@@ -48,7 +48,6 @@
             this.btnUsun = new System.Windows.Forms.Button();
             this.txtIdPrzejazdy = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.txtImie = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -244,18 +243,6 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Id_Przejazdu";
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Silver;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnUpdate.Location = new System.Drawing.Point(487, 312);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(115, 47);
-            this.btnUpdate.TabIndex = 23;
-            this.btnUpdate.Text = "Edytuj";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
             // txtImie
             // 
             this.txtImie.Location = new System.Drawing.Point(93, 95);
@@ -280,7 +267,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtImie);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtIdPrzejazdy);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnUsun);
@@ -333,7 +319,6 @@
         private System.Windows.Forms.Button btnUsun;
         private System.Windows.Forms.TextBox txtIdPrzejazdy;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.TextBox txtImie;
         private System.Windows.Forms.Label label9;
     }
