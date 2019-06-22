@@ -43,7 +43,7 @@ namespace UserLogin
                                 "Jeśli nie masz konta zarejestruj się!:) ");
             }
         }
-
+        //Button do rejestracji
         private void Button2_Click(object sender, EventArgs e)
         {
             this.Hide();
