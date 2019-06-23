@@ -23,6 +23,13 @@ namespace UserLogin
             this.Close();
         }
 
+        /// <summary> 
+        /// Łączenie z bazą danych
+        /// Rejestracja wpisywanie danych personalnych
+        /// Potwierdzenie MessageBox o poprawnym zarejestrowaniu
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
