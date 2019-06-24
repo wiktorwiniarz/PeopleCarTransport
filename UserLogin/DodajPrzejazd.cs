@@ -19,6 +19,8 @@ namespace UserLogin
         {
             InitializeComponent();
         }
+     
+
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -39,6 +41,8 @@ namespace UserLogin
             pokarz_przejazdy();
             MessageBox.Show("Przejazd został dodany!!!");
 
+          
+
         }
         public void pokarz_przejazdy()
         {
@@ -53,6 +57,8 @@ namespace UserLogin
             dataGridView1.DataSource = dt;
 
             con.Close();
+
+           
 
         }
 
@@ -72,6 +78,8 @@ namespace UserLogin
             pokarz_przejazdy();
             MessageBox.Show("Przejazd został usunięty!!!");
         }
+
+      
 
       
     }
