@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ * @file Logowanie.cs
+ * @autor Wiktor Winiarz
+ * @date June 24, 2019
+ * @brief Logowanie do aplikacji
+ * 
+ * Ten formularz dotyczy metod logowania  i łączenie z bazą
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,13 +26,22 @@ namespace UserLogin
         {
             InitializeComponent();
         }
-        //Zamknięcie logowania
+
+        /// <summary> 
+        /// Przycisk zamknięcia aplikacji
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        //Łączenie z bazą oraz sprawdzanie poprawności danych do zalogowania
+        /// <summary> 
+        /// Łączenie z bazą oraz sprawdzanie poprawności danych do zalogowania
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
@@ -44,7 +62,12 @@ namespace UserLogin
                                 "Jeśli nie masz konta zarejestruj się!:) ");
             }
         }
-        //Button do rejestracji
+
+        /// <summary> 
+        /// Button do rejestracji
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void Button2_Click(object sender, EventArgs e)
         {
             this.Hide();

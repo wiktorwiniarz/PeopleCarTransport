@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ * @file Rejestracja.cs
+ * @autor Wiktor Winiarz
+ * @date June 24, 2019
+ * @brief Rejestracja w aplikacji
+ * 
+ * Ten formularz dotyczy metod rejestracji  i łączenia z bazą
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +27,11 @@ namespace UserLogin
             InitializeComponent();
         }
 
+        /// <summary> 
+        /// Przycisk zamknięcia aplikacji
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();

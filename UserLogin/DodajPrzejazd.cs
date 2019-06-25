@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ * @file Kontrolka DodajPrzejazd.cs
+ * @autor Wiktor Winiarz
+ * @date June 24, 2019
+ * @brief Dodanie przejazdu
+ * 
+ * Ten formularz dotyczy metod dodania przejazdu oraz łączenia z bazą
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -13,15 +22,22 @@ namespace UserLogin
 {
     public partial class DodajPrzejazd : UserControl
     {
+        /**
+         * Łączenie z bazą 
+         */
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WIKTOR\Desktop\PeopleCarTransport\BD\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         public DodajPrzejazd()
         {
             InitializeComponent();
         }
-     
 
 
+        /// <summary> 
+        /// Przycisk zapisu dodania przejazdu 
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void btnSave_Click(object sender, EventArgs e)
         {
             con.Open();
@@ -44,6 +60,9 @@ namespace UserLogin
           
 
         }
+
+        /**Metoda pokazania danych w dataGriedView
+         */
         public void pokarz_przejazdy()
         {
             con.Open();
@@ -62,11 +81,21 @@ namespace UserLogin
 
         }
 
+        /// <summary> 
+        /// Jest to metoda która pokazuje przejazdy w kontrolce dodaj przejazd
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void DodajPrzejazd_Load(object sender, EventArgs e)
         {
             pokarz_przejazdy();
         }
 
+        /// <summary> 
+        /// Przycisk usunięcia przejazdu z listy przejazdów
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void btnUsun_Click(object sender, EventArgs e)
         {
             con.Open();

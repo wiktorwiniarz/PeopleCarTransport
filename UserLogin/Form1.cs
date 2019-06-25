@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ * @file StronaGlowna.cs
+ * @autor Wiktor Winiarz
+ * @date June 24, 2019
+ * @brief Jest to glowny strona projektu
+ * 
+ * Ten formularz dotyczy metod strony glownej
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,29 +34,42 @@ namespace UserLogin
 
         }
 
- 
-        //Przycisk zamknięcia
+        /// <summary> 
+        /// Przycisk zamknięcia aplikacji
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void Button8_Click(object sender, EventArgs e)
         {
             Environment.Exit(1);
         }
 
-
-      
-
+        /// <summary> 
+        /// Przycisk otwarcia kontrolki dodanie przejazdu
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void btmDodajPrzejazd_Click_1(object sender, EventArgs e)
         {
             DodajPrzejazd.BringToFront();
            
         }
 
+        /// <summary> 
+        /// Przycisk otwarcia kontrolki wyszukanie przejazdu
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void btmWyszukajPrzejazd_Click(object sender, EventArgs e)
         {
             wyszukajCar1.BringToFront();
         }
 
-       
-
+        /// <summary> 
+        /// Przycisk wylogowania z aplikacji
+        /// </summary> 
+        /// <param name="sender"></param>
+        ///  <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
